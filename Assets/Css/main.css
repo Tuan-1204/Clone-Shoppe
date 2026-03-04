@@ -15,6 +15,7 @@
 
 .header__navbar-item {
   margin: 0 8px;
+  position: relative;
 }
 .header__navbar-item,
 .header__navbar-item-link {
@@ -31,9 +32,11 @@
 
 .header__navbar-item--saparate::after {
   content: "";
-  display: inline-block;
-  width: 1px;
+  display: block;
+  position: absolute;
+  border-left: 1px solid #FB9086;
   height: 12px;
-  background-color: var(--white-color);
-  margin-left: 8px;
+  right: -9px;
+  top: 50%;
+  transform: translateY(-50%);
 }
