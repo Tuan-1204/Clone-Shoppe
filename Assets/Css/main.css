@@ -28,3 +28,12 @@
 .header__navbar-item--strong {
   font-weight: 400;
 }
+
+.header__navbar-item--saparate::after {
+  content: "";
+  display: inline-block;
+  width: 1px;
+  height: 12px;
+  background-color: var(--white-color);
+  margin-left: 8px;
+}
