@@ -12,7 +12,7 @@
 
 html {
   /* cỡ chữ mặc định là 16px */
-  font-size: 62.5%;
+  font-size: 100%;
   /* chiều cao mặc định tương ứng 16px */
   line-height: 1.6rem;
   /* font chữ mặc định, chuẩn chữ không có chân */
@@ -36,4 +36,3 @@ html {
   display: flex;
   flex-wrap: wrap;
 }
-
