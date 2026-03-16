@@ -27,6 +27,10 @@
   font-weight: 300;
 }
 
+.header__navbar-item-has-qr:hover  .header__qr {
+  display: block;
+}
+
 .header__navbar-item:hover,
 .header__navbar-icon-link:hover ,
 .header__navbar-item-link:hover {
@@ -62,4 +66,47 @@
 .header__navbar-title--no-pointer{
   cursor: text;
   color: var(--white-color);
+}
+/* QR Code Styles */
+
+.header__qr{
+background-color: var(--white-color); 
+width: 186px;
+position: absolute;
+left: 0;
+top: 118%;
+padding: 8px;
+border-radius: 2px;
+display: none;
+}
+ 
+.header__qr::before{
+  content: "";
+  display: none;
+  position: absolute;
+  width: 100%;
+height: 20px;
+  left: 0;
+  top: -20px;
+}
+
+.header__qr-img {
+ width: 100%;
+}
+
+.header__qr-apps {
+display: flex;
+justify-content: space-between;
+
+}
+
+.header__qr-link:first-child(1) {
+  margin-left: 11px;
+}
+
+.header__qr-link:first-child(2) {
+  margin-right: 11px;
+}
+.header__qr-dowload-img {
+height: 16px;
 }
